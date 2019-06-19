@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "741763002785",
+    "firebase_url": "https://staff-tracking-app.firebaseio.com",
+    "project_id": "staff-tracking-app",
+    "storage_bucket": "staff-tracking-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741763002785:android:23e177010aa05fee",
+        "android_client_info": {
+          "package_name": "com.pkl.stafftracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741763002785-pldf11dsqua7dsc8a0npqatp1k9dg45d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pkl.stafftracking",
+            "certificate_hash": "64de3d37e9edcddf6f7b99c742a04abf88cbed4a"
+          }
+        },
+        {
+          "client_id": "741763002785-qak4ujssjthn18dr79t92t7l3f680d76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArEX9BrNgzeCtOzjwJpVhdP_q14ZVwxK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741763002785-qak4ujssjthn18dr79t92t7l3f680d76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
