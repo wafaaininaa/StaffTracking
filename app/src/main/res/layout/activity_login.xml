@@ -1,0 +1,173 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_account_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/status" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/icon"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone_title_text"
+            android:visibility="gone"
+            android:layout_alignBaseline="@+id/detail"
+            android:layout_alignBottom="@+id/detail"
+            android:layout_toLeftOf="@+id/icon"
+            android:layout_toStartOf="@+id/icon" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/status"
+            android:text="signed_out"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail"
+            android:visibility="gone"
+            android:layout_below="@+id/button_verify_phone"
+            android:layout_toLeftOf="@+id/title_text"
+            android:layout_toStartOf="@+id/title_text"
+            android:layout_marginRight="78dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginTop="52dp" />
+
+
+        <EditText
+            android:id="@+id/field_phone_number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_round"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:hint=" Masukkan nomor telepon  "
+            android:inputType="phone"
+            android:textColor="#000"
+            android:textColorHint="#545454"
+            android:textSize="12dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/icon"
+            />
+
+        <EditText
+            android:id="@+id/field_verification_code"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="#90cecece"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_centerHorizontal="true"
+            android:hint=" Masukkan kode OTP "
+            android:textSize="12dp"
+            android:textColor="#545454"
+            android:textColorHint="#545454"
+
+            android:visibility="gone"
+            android:inputType="number"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/field_phone_number"
+            />
+
+
+
+        <Button
+            android:id="@+id/button_start_verification"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:padding="3dp"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp"
+            android:text="LOGIN"
+            android:background="@drawable/button_round"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/field_verification_code"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+
+            android:id="@+id/button_verify_phone"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_round"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp"
+            android:text="Verifikasi"
+            android:visibility="gone"
+            android:layout_alignBaseline="@+id/button_start_verification"
+            android:layout_alignBottom="@+id/button_start_verification"
+            android:layout_alignLeft="@+id/button_start_verification"
+            android:layout_alignStart="@+id/button_start_verification" />
+
+        <Button
+            android:id="@+id/button_resend"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:text="Kirim kembali OTP"
+            android:background="@drawable/button_round"
+            android:layout_marginTop="30dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_start_verification" />
+
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp"
+            android:text="sign_out"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/button_verify_phone"
+            android:layout_alignStart="@+id/button_verify_phone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
